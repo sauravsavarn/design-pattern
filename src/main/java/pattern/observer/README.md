@@ -11,3 +11,16 @@ Structure/Call Diagram for the Observer Pattern
 Benefits & Drawbacks
 
 ![img.png](docs/assets/images/benefits-drawbacks.png)
+
+    Advantages:
+Provides a loosely coupled design between objects that interact. Loosely coupled objects are flexible with changing requirements. Here loose coupling means that the interacting objects should have less information about each other.
+
+Observer pattern provides this loose coupling as:
+
+Subject only knows that observer implement Observer interface.Nothing more.
+There is no need to modify Subject to add or remove observers.
+We can reuse subject and observer classes independently of each other.
+
+    Disadvantages:
+
+Memory leaks caused by <font color="yellow"><u>Lapsed listener problem</u></font> because of explicit register and unregistering of observers.
